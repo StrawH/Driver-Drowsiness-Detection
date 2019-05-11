@@ -16,7 +16,7 @@ import pygame
 def sound_alarm():
     # play an alarm sound
     pygame.init()
-    pygame.mixer.music.load('/home/omar/Desktop/projects/drawsness/zz.wav')
+    pygame.mixer.music.load('tone path')
     pygame.mixer.music.play()
 
 def eye_aspect_ratio(eye):
@@ -59,7 +59,7 @@ ALARM_ON = False
 # the facial landmark predictor
 print("[INFO] loading facial landmark predictor...")
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor('/home/omar/Desktop/projects/drawsness/shape_predictor_68_face_landmarks.dat')
+predictor = dlib.shape_predictor('predictor path')
 
 # grab the indexes of the facial landmarks for the left and
 # right eye, respectively
